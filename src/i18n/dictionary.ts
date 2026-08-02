@@ -1,0 +1,128 @@
+export type Language = 'it' | 'en';
+
+export const DICTIONARY = {
+  it: {
+    header: {
+      archive: 'Archivio',
+      subtitle: 'Digital Art Platform Showcase',
+      visitOfficial: 'Visita OOX.art',
+    },
+    drawer: {
+      title: 'OOX Features',
+      subtitle: 'Archivio Completo',
+      searchPlaceholder: 'Cerca una feature...',
+      homeLink: 'Homepage Introduzione',
+      homeSub: 'Panoramica Generale',
+      allFeatures: 'Tutte le Feature',
+      visitOfficial: 'Visita OOX.art Official',
+    },
+    hero: {
+      badge: 'OOX Ecosystem Features Showcase',
+      titleStart: 'Esplora le Potenti Features di',
+      subtitle: 'Scopri ogni singolo modulo dell’ecosistema OOX: dal Marketplace NFT ad alte prestazioni fino all’identità Web3, agli strumenti per creator e alla sicurezza on-chain.',
+      exploreCta: 'Esplora l’Archivio',
+      visitCta: 'Visita oox.art',
+      ultraFast: 'Ultra Veloce',
+      rustSecurity: 'Sicurezza Rust',
+      nativeMobile: 'Native Mobile',
+      swipeHint: 'Scorri col dito per esplorare le feature in primo piano',
+    },
+    filter: {
+      all: 'Tutti',
+      allFeaturesTitle: 'Tutte le Feature Disponibili',
+      filterDesc: 'Seleziona una categoria o clicca su una scheda per accedere alla landing di dettaglio.',
+    },
+    mobileHint: {
+      title: 'Navigazione Rapida da Dispositivi Mobili',
+      desc: 'Usa il pulsante **Archivio** in alto a destra per aprire il menu a comparsa e passare all’istante da una feature all’altra.',
+    },
+    card: {
+      discoverCta: 'Scopri Feature',
+    },
+    detail: {
+      backToArchive: 'Torna all’Archivio',
+      topic: 'Topic',
+      socialPreviewTitle: 'Anteprima Condivisione Social per X (Twitter)',
+      socialPreviewBadge: '1200 x 630 OG Banner',
+      socialPreviewDesc: 'Quando condividi l’URL di questa pagina su X o sui social, verrà mostrata automaticamente questa immagine di anteprima dedicata a questo specifico topic:',
+      highlightsTitle: 'Punti Salienti della Feature',
+      ctaTitle: 'Pronto a Provarla su OOX?',
+      ctaDesc: 'Accedi alla piattaforma ufficiale OOX.art per vivere l’esperienza completa del collezionismo digitale su MultiversX.',
+      ctaButton: 'Apri OOX.art',
+    },
+    share: {
+      copyLink: 'Copia Link',
+      copied: 'Copiato!',
+      shareOnX: 'Posta su X',
+    },
+    footer: {
+      desc: 'La vetrina ufficiale delle funzionalità e dell’ecosistema OOX su MultiversX. Grafica essenziale, mobile-first e ad alte prestazioni.',
+      pagesTitle: 'Pagine Feature',
+      ecosystemTitle: 'Ecosistema',
+      rights: 'Tutti i diritti riservati.',
+      status: 'Status: Operativo',
+    },
+  },
+  en: {
+    header: {
+      archive: 'Archive',
+      subtitle: 'Digital Art Platform Showcase',
+      visitOfficial: 'Visit OOX.art',
+    },
+    drawer: {
+      title: 'OOX Features',
+      subtitle: 'Full Archive',
+      searchPlaceholder: 'Search a feature...',
+      homeLink: 'Homepage Overview',
+      homeSub: 'General Overview',
+      allFeatures: 'All Features',
+      visitOfficial: 'Visit OOX.art Official',
+    },
+    hero: {
+      badge: 'OOX Ecosystem Features Showcase',
+      titleStart: 'Explore the Powerful Features of',
+      subtitle: 'Discover every module of the OOX ecosystem: from high-performance NFT Marketplace to Web3 identity, creator tools, and on-chain security.',
+      exploreCta: 'Explore Archive',
+      visitCta: 'Visit oox.art',
+      ultraFast: 'Ultra Fast',
+      rustSecurity: 'Rust Security',
+      nativeMobile: 'Native Mobile',
+      swipeHint: 'Swipe with finger to explore featured items',
+    },
+    filter: {
+      all: 'All',
+      allFeaturesTitle: 'All Available Features',
+      filterDesc: 'Select a category or click a card to access its detailed landing page.',
+    },
+    mobileHint: {
+      title: 'Quick Mobile Navigation',
+      desc: 'Use the **Archive** button at the top right to open the drawer menu and switch between features instantly.',
+    },
+    card: {
+      discoverCta: 'Discover Feature',
+    },
+    detail: {
+      backToArchive: 'Back to Archive',
+      topic: 'Topic',
+      socialPreviewTitle: 'Social Share Preview for X (Twitter)',
+      socialPreviewBadge: '1200 x 630 OG Banner',
+      socialPreviewDesc: 'When you share this page URL on X or social networks, this dedicated topic preview image will be displayed automatically:',
+      highlightsTitle: 'Feature Highlights',
+      ctaTitle: 'Ready to Try It on OOX?',
+      ctaDesc: 'Access the official OOX.art platform to experience digital art collecting on MultiversX.',
+      ctaButton: 'Open OOX.art',
+    },
+    share: {
+      copyLink: 'Copy Link',
+      copied: 'Copied!',
+      shareOnX: 'Post on X',
+    },
+    footer: {
+      desc: 'The official showcase of OOX features and ecosystem on MultiversX. Clean graphics, mobile-first, and high performance.',
+      pagesTitle: 'Feature Pages',
+      ecosystemTitle: 'Ecosystem',
+      rights: 'All rights reserved.',
+      status: 'Status: Operational',
+    },
+  },
+};
