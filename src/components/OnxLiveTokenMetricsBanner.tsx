@@ -112,20 +112,20 @@ export default function OnxLiveTokenMetricsBanner() {
     : '$10,120.29';
 
   return (
-    <section className="relative rounded-3xl p-6 sm:p-10 glass-card border border-cyan-500/30 overflow-hidden space-y-8 shadow-2xl">
+    <section className="relative rounded-3xl p-4 sm:p-8 glass-card border border-cyan-500/30 overflow-hidden space-y-8 shadow-2xl">
       {/* Ambient Glows */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-cyan-500/15 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-600/15 rounded-full blur-3xl pointer-events-none" />
 
       {/* HEADER SECTION */}
-      <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-black/5 dark:border-white/10 pb-6">
-        <div className="space-y-2">
-          <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 text-xs font-extrabold tracking-wide">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-            <span>{isIt ? 'MultiversX Mainnet Data Live' : 'MultiversX Mainnet Live Data'}</span>
+      <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 border-b border-black/5 dark:border-white/10 pb-6">
+        <div className="space-y-3 max-w-2xl">
+          <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-600 dark:text-cyan-400 text-xs font-extrabold tracking-wide">
+            <Coins className="w-3.5 h-3.5" />
+            <span>{isIt ? 'Token Utility • Dati Blockchain MultiversX' : 'Token Utility • MultiversX Blockchain Data'}</span>
           </div>
 
-          <h2 className="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight flex items-center space-x-3">
+          <h2 className="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight leading-tight break-words">
             <span>$ONX Token Analytics</span>
             <span className="text-xs font-mono px-2.5 py-1 rounded-xl bg-slate-100 dark:bg-white/10 text-slate-600 dark:text-slate-300 font-bold">
               {tokenData.identifier}

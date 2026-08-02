@@ -23,7 +23,7 @@ export default function AboutOnionXLabsBanner() {
   const isIt = language === 'it';
 
   return (
-    <section className="relative rounded-3xl p-6 sm:p-10 glass-card border border-cyan-500/30 overflow-hidden space-y-10 shadow-2xl">
+    <section className="relative rounded-3xl p-4 sm:p-8 glass-card border border-cyan-500/30 overflow-hidden space-y-10 shadow-2xl">
       {/* Background Ambient Glows */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-cyan-500/15 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-600/15 rounded-full blur-3xl pointer-events-none" />
@@ -37,7 +37,7 @@ export default function AboutOnionXLabsBanner() {
             <span>{isIt ? 'Chi Siamo • OnionXLabs' : 'About Us • OnionXLabs'}</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl font-black text-slate-900 dark:text-white tracking-tight leading-tight">
+          <h1 className="text-2xl sm:text-5xl font-black text-slate-900 dark:text-white tracking-tight leading-tight break-words">
             About <span className="gradient-text-cyan-purple">OnionXLabs</span>
           </h1>
 

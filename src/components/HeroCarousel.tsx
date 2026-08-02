@@ -83,14 +83,14 @@ export default function HeroCarousel() {
       onTouchEnd={onTouchEnd}
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
-      className="relative rounded-3xl overflow-hidden glass-card border border-black/5 dark:border-white/10 select-none min-h-[420px] sm:min-h-[400px] flex flex-col justify-between"
+      className="relative rounded-3xl overflow-hidden glass-card border border-black/5 dark:border-white/10 select-none flex flex-col justify-between"
     >
       {/* Background Ambient Glows */}
       <div className="absolute top-0 right-0 w-80 h-80 bg-cyan-500/15 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-purple-600/15 rounded-full blur-3xl pointer-events-none" />
 
       {/* SLIDES CONTAINER */}
-      <div className="relative z-10 p-6 sm:p-10 flex-1 flex flex-col justify-center">
+      <div className="relative z-10 p-4 sm:p-8 flex-1 flex flex-col justify-center">
         
         {/* SLIDE 0: DEFAULT HERO INTRO (Image Left, Text & Buttons Right) */}
         {currentSlide === 0 && (

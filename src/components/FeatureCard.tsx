@@ -52,7 +52,7 @@ export default function FeatureCard({ feature }: FeatureCardProps) {
   const badge = getLocalized(feature.badge);
 
   return (
-    <div className="group relative rounded-3xl glass-card p-6 flex flex-col justify-between hover:border-cyan-500/40 hover:shadow-glow-cyan transition-all duration-300 transform hover:-translate-y-1">
+    <div className="group relative rounded-3xl glass-card p-5 sm:p-6 flex flex-col justify-between hover:border-cyan-500/40 hover:shadow-glow-cyan transition-all duration-300 transform hover:-translate-y-1">
       {/* Background glow behind icon */}
       <div 
         className="absolute -top-10 -right-10 w-32 h-32 rounded-full blur-3xl opacity-20 pointer-events-none group-hover:opacity-40 transition-opacity"
@@ -61,26 +61,26 @@ export default function FeatureCard({ feature }: FeatureCardProps) {
 
       <div>
         {/* Top Header with Icon & Category Badge */}
-        <div className="flex items-center justify-between mb-4">
-          <div className={`w-12 h-12 rounded-2xl ${gradientClass} flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-            <IconComponent className="w-6 h-6" />
+        <div className="flex items-center justify-between gap-2 mb-4">
+          <div className={`w-11 h-11 sm:w-12 sm:h-12 rounded-2xl ${gradientClass} flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300 shrink-0`}>
+            <IconComponent className="w-5 h-5 sm:w-6 sm:h-6" />
           </div>
 
           {badge && (
-            <span className="text-xs font-extrabold px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-500 dark:text-cyan-400 border border-cyan-500/20">
+            <span className="text-[11px] sm:text-xs font-extrabold px-2.5 py-1 rounded-full bg-cyan-500/10 text-cyan-500 dark:text-cyan-400 border border-cyan-500/20 text-right leading-tight">
               {badge}
             </span>
           )}
         </div>
 
         {/* Title & Subtitle */}
-        <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-cyan-400 transition-colors mb-2">
+        <h3 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white group-hover:text-cyan-400 transition-colors mb-1.5 break-words">
           {title}
         </h3>
-        <p className="text-xs font-semibold text-cyan-600 dark:text-cyan-400 mb-3">
+        <p className="text-xs font-semibold text-cyan-600 dark:text-cyan-400 mb-3 break-words">
           {subtitle}
         </p>
-        <p className="text-sm text-slate-600 dark:text-slate-400 line-clamp-3 mb-6 leading-relaxed">
+        <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 line-clamp-3 mb-6 leading-relaxed">
           {shortDesc}
         </p>
       </div>

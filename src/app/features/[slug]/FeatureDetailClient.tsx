@@ -136,7 +136,7 @@ export default function FeatureDetailClient({ slug }: { slug: string }) {
     <div className="space-y-10 py-4 max-w-4xl mx-auto">
 
       {/* FEATURE HERO HEADER WITH IMAGE EMBEDDED ON THE RIGHT */}
-      <section className="relative rounded-3xl p-6 sm:p-8 glass-card border border-black/5 dark:border-white/10 overflow-hidden">
+      <section className="relative rounded-3xl p-4 sm:p-8 glass-card border border-black/5 dark:border-white/10 overflow-hidden">
         <div 
           className="absolute -top-20 -right-20 w-80 h-80 rounded-full blur-3xl opacity-20 pointer-events-none"
           style={{ backgroundColor: feature.glowColor }}
@@ -152,11 +152,11 @@ export default function FeatureDetailClient({ slug }: { slug: string }) {
               </span>
             )}
             
-            <h1 className="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight leading-tight">
+            <h1 className="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight leading-tight break-words">
               {title}
             </h1>
 
-            <p className="text-sm sm:text-base font-bold text-cyan-500 dark:text-cyan-400">
+            <p className="text-sm sm:text-base font-bold text-cyan-500 dark:text-cyan-400 break-words">
               {subtitle}
             </p>
 
@@ -165,7 +165,7 @@ export default function FeatureDetailClient({ slug }: { slug: string }) {
             </p>
 
             {/* QUICK SHARING BUTTONS AT BOTTOM OF FIRST SECTION */}
-            <div className="flex items-center space-x-2.5 pt-2">
+            <div className="flex flex-wrap items-center gap-2 pt-2">
               <button
                 onClick={handleCopyLink}
                 className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl glass-card hover:border-cyan-500/40 text-slate-700 dark:text-slate-200 text-xs font-bold transition-all active:scale-95 shadow-sm"

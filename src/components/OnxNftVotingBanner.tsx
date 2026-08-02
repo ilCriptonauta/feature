@@ -33,7 +33,7 @@ export default function OnxNftVotingBanner() {
   };
 
   return (
-    <section className="relative rounded-3xl p-6 sm:p-10 glass-card border border-purple-500/40 overflow-hidden space-y-8">
+    <section className="relative rounded-3xl p-4 sm:p-8 glass-card border border-purple-500/40 overflow-hidden space-y-8">
       {/* Background Ambient Glow */}
       <div className="absolute top-0 left-0 w-96 h-96 rounded-full blur-3xl opacity-20 bg-purple-500 pointer-events-none" />
 
@@ -44,7 +44,7 @@ export default function OnxNftVotingBanner() {
           <span>{isIt ? 'Voto NFT & Classifica Top Voted' : 'NFT Voting & Top Voted Leaderboard'}</span>
         </div>
 
-        <h2 className="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight leading-tight">
+        <h2 className="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight leading-tight break-words">
           {isIt ? (
             <>Vota i tuoi NFT preferiti: <span className="gradient-text-cyan-purple">Più Voti, Più Esposizione</span></>
           ) : (

@@ -78,7 +78,7 @@ export default function AboutOnxSuperpowersBanner() {
   const currentPower = superpowers[activeTab];
 
   return (
-    <section className="relative rounded-3xl p-6 sm:p-10 glass-card border border-amber-500/40 overflow-hidden space-y-8">
+    <section className="relative rounded-3xl p-4 sm:p-8 glass-card border border-amber-500/40 overflow-hidden space-y-8">
       {/* Ambient Background Glow */}
       <div 
         className="absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl opacity-20 pointer-events-none transition-all duration-500"
@@ -92,7 +92,7 @@ export default function AboutOnxSuperpowersBanner() {
           <span>{isIt ? 'Meccaniche dei Superpoteri $ONX' : '$ONX Superpower Mechanics'}</span>
         </div>
 
-        <h2 className="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight leading-tight">
+        <h2 className="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight leading-tight break-words">
           {isIt ? (
             <>Schema Operativo dei Superpoteri di <span className="gradient-text-cyan-purple">$ONX</span></>
           ) : (

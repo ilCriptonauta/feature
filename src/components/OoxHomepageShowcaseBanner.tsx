@@ -22,7 +22,7 @@ export default function OoxHomepageShowcaseBanner() {
   const [activeLeaderboard, setActiveLeaderboard] = useState<'volume' | 'voted'>('voted');
 
   return (
-    <section className="relative rounded-3xl p-6 sm:p-10 glass-card border border-cyan-500/30 overflow-hidden space-y-10 shadow-2xl">
+    <section className="relative rounded-3xl p-4 sm:p-8 glass-card border border-cyan-500/30 overflow-hidden space-y-10 shadow-2xl">
       {/* Background Ambient Glows */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-cyan-500/15 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-600/15 rounded-full blur-3xl pointer-events-none" />
@@ -34,7 +34,7 @@ export default function OoxHomepageShowcaseBanner() {
           <span>{isIt ? 'La Homepage OOX • Vetrina Ufficiale' : 'OOX Homepage • Official Showcase'}</span>
         </div>
 
-        <h2 className="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight leading-tight">
+        <h2 className="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight leading-tight break-words">
           {isIt ? (
             <>La Homepage di OOX: <span className="gradient-text-cyan-purple">Semplice, Pulita ed Elegante.</span></>
           ) : (
