@@ -56,24 +56,28 @@ export default function OoxOurCollectionsBanner() {
       glow: '#a855f7',
     },
     {
-      id: 'chubby-avatars',
+      id: 'chubbyonionx',
       category: 'avatars',
-      name: 'OOX Chubby Avatars',
-      ticker: 'CHUBBY',
-      badge: isIt ? 'Web3 Profile Identity' : 'Web3 Profile Identity',
+      name: 'ChubbyOnionX',
+      ticker: 'CHBONX',
+      identifier: 'CHBONX-3e0201',
+      badge: isIt ? 'Collezione di Punta • Pass OOX+' : 'Flagship Collection • OOX+ Pass',
       verified: true,
       floorPrice: '1.2 EGLD',
       volume: '890 EGLD',
-      items: 3333,
-      holders: 1420,
-      openRarityRank: '#2',
+      items: '333 NFTs',
+      holders: '150',
+      marketplaceUrl: 'https://oox.art/marketplace/collections/CHBONX-3e0201',
+      explorerUrl: 'https://explorer.multiversx.com/collections/CHBONX-3e0201',
+      openRarityRank: '#1 NFT',
       description: isIt
-        ? 'Gli iconici avatar 3D piumati ed animati dell’ecosistema. Si sincronizzano automaticamente come immagine di profilo Web3 su OOX e sbloccano badge di prestigio sui social.'
-        : 'The iconic 3D animated avatars of the ecosystem. Natively syncs as your Web3 profile picture across OOX with exclusive social prestige badges.',
+        ? 'La nostra collezione di punta dell’ecosistema OOX. 333 avatar PFP unici: ogni ChubbyOnionX nel tuo wallet è un PASS A VITA per OOX+, sblocca il ruolo CHUBBER Club su Discord e garantisce ricompense ed airdrop mensili.'
+        : 'Our flagship collection of the OOX ecosystem. 333 cute PFP avatars: holding a ChubbyOnionX in your wallet is a LIFETIME PASS for OOX+, unlocking the CHUBBER Club Discord role and monthly rewards.',
       perks: [
-        isIt ? 'PFP 3D animato su OOX' : '3D Animated PFP on OOX',
-        isIt ? 'Skin personalizzate per eventi' : 'Custom skins for events',
-        isIt ? 'Voto NFT raddoppiato (2x)' : 'Doubled NFT Vote Weight (2x)',
+        isIt ? 'PASS A VITA per OOX+ & Benefit VIP' : 'LIFETIME PASS for OOX+ & VIP Perks',
+        isIt ? 'Ruolo CHUBBER Club su Discord' : 'CHUBBER Club Role on Discord',
+        isIt ? 'Premiazione Mensile & Airdrop Token' : 'Monthly Prizes & Token Airdrops',
+        isIt ? '150 Holders & 333 NFT Unici su MultiversX' : '150 Holders & 333 Unique NFTs on MultiversX',
       ],
       gradient: 'from-pink-500 via-purple-500 to-cyan-400',
       glow: '#ec4899',
@@ -322,7 +326,7 @@ export default function OoxOurCollectionsBanner() {
                 </a>
               )}
               <a
-                href="https://oox.art"
+                href={col.marketplaceUrl || 'https://oox.art'}
                 target="_blank"
                 rel="noreferrer"
                 className="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 text-white font-extrabold text-xs flex items-center justify-center space-x-2 shadow-glow-cyan hover:opacity-95 transition-all active:scale-95"
