@@ -201,6 +201,65 @@ export const OOX_FEATURES: OOXFeatureMultilingual[] = [
   },
 
   // ==========================================
+  // OUR COLLECTIONS FEATURE
+  // ==========================================
+  {
+    id: 'our-collections',
+    slug: 'our-collections',
+    isMain: true,
+    title: {
+      it: 'Our Collections',
+      en: 'Our Collections',
+    },
+    subtitle: {
+      it: 'Le Collezioni Ufficiali dell’Ecosistema OOX',
+      en: 'Official OOX Ecosystem Collections',
+    },
+    shortDescription: {
+      it: 'Esplora le collezioni NFT ufficiali nate su OOX: arte digitale, utility esclusive, benefit per gli holder e rarità certificata Open Rarity.',
+      en: 'Explore official NFT collections born on OOX: digital art, exclusive utility, holder perks, and Open Rarity certified scores.',
+    },
+    fullDescription: {
+      it: 'OnionXLabs e l’ecosistema OOX presentano la selezione di collezioni ufficiali. Ogni collezione è progettata con smart contract auditati in Rust, rarità calcolata via Open Rarity, staking pool dedicate e vantaggi reali per i possessori.',
+      en: 'OnionXLabs and the OOX ecosystem introduce the official suite of collections. Every collection is engineered with audited Rust smart contracts, Open Rarity scoring, dedicated staking pools, and real-world holder utilities.',
+    },
+    category: 'Marketplace',
+    icon: 'Store',
+    badge: {
+      it: 'Collezioni Ufficiali',
+      en: 'Official Collections',
+    },
+    accentGradient: 'from-purple-500 via-pink-500 to-cyan-400',
+    glowColor: '#a855f7',
+    ogImage: '/og/og-our-collections.png',
+    highlights: [
+      { it: 'Arte & Utility su Rete MultiversX', en: 'Art & Utility on MultiversX Network' },
+      { it: 'Staking Pool Dedicate & Multiplier ONX', en: 'Dedicated Staking Pools & ONX Multipliers' },
+      { it: 'Accesso Esclusivo ad Eventi & Airdrop', en: 'Exclusive Event Access & Airdrops' },
+    ],
+    metrics: [
+      { label: { it: 'Collezioni Live', en: 'Live Collections' }, value: '4' },
+      { label: { it: 'NFT Mintati', en: 'Minted NFTs' }, value: '7,055' },
+      { label: { it: 'Volume Scambiato', en: 'Traded Volume' }, value: '4,080 EGLD' },
+    ],
+    detailedContent: {
+      heroHeading: {
+        it: 'Our Collections • Le Collezioni Ufficiali OOX',
+        en: 'Our Collections • Official OOX Collections',
+      },
+      sectionTitle: {
+        it: 'Esplora le Collezioni Ufficiali su MultiversX',
+        en: 'Explore Official Collections on MultiversX',
+      },
+      sectionDescription: {
+        it: 'Arte digitale d’eccellenza, utilità reali per gli holder e rarità certificata.',
+        en: 'Excellence in digital art, real holder utilities, and certified rarity.',
+      },
+      keyBenefits: [],
+    },
+  },
+
+  // ==========================================
   // 3. ABOUT ONX
   // ==========================================
   {

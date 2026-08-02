@@ -35,6 +35,7 @@ import OoxHostYourEventBanner from '@/components/OoxHostYourEventBanner';
 import OnxLiveTokenMetricsBanner from '@/components/OnxLiveTokenMetricsBanner';
 import OnxNftVotingBanner from '@/components/OnxNftVotingBanner';
 import OnxStakingDeepDiveBanner from '@/components/OnxStakingDeepDiveBanner';
+import OoxOurCollectionsBanner from '@/components/OoxOurCollectionsBanner';
 import { 
   ArrowLeft, 
   CheckCircle2, 
@@ -209,8 +210,8 @@ export default function FeatureDetailClient({ slug }: { slug: string }) {
         </div>
       </section>
 
-      {/* DETAILED CONTENT & KEY BENEFITS (EXCEPT ON TOOLS, PROFILES, OVERVIEW, ABOUT-ONX, EVENTS, ABOUT-ONIONXLABS & SECURITY PAGES) */}
-      {feature.slug !== 'tools' && feature.slug !== 'profiles' && feature.slug !== 'overview' && feature.slug !== 'about-onx' && feature.slug !== 'events' && feature.slug !== 'about-onionxlabs' && feature.slug !== 'security' && (
+      {/* DETAILED CONTENT & KEY BENEFITS (EXCEPT ON TOOLS, PROFILES, OVERVIEW, ABOUT-ONX, EVENTS, ABOUT-ONIONXLABS, OUR-COLLECTIONS & SECURITY PAGES) */}
+      {feature.slug !== 'tools' && feature.slug !== 'profiles' && feature.slug !== 'overview' && feature.slug !== 'about-onx' && feature.slug !== 'events' && feature.slug !== 'about-onionxlabs' && feature.slug !== 'security' && feature.slug !== 'our-collections' && (
         <section className="space-y-6">
           <div className="text-center sm:text-left">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
@@ -244,6 +245,11 @@ export default function FeatureDetailClient({ slug }: { slug: string }) {
             })}
           </div>
         </section>
+      )}
+
+      {/* OUR COLLECTIONS LANDING EXCLUSIVE BANNER */}
+      {feature.slug === 'our-collections' && (
+        <OoxOurCollectionsBanner />
       )}
 
       {/* OVERVIEW LANDING EXCLUSIVE BANNERS */}
