@@ -28,24 +28,29 @@ export default function OoxOurCollectionsBanner() {
 
   const collections = [
     {
-      id: 'oox-genesis',
+      id: 'onionxcards',
       category: 'genesis',
-      name: 'OOX Genesis Pass',
-      ticker: 'OOXGEN',
-      badge: isIt ? 'Collezione Madre' : 'Master Collection',
+      name: 'OnionXCards',
+      ticker: 'ONXCRDS',
+      identifier: 'ONXCRDS-ab712e',
+      type: 'SFT',
+      badge: isIt ? 'Collezione SFT' : 'SFT Collection',
       verified: true,
-      floorPrice: '4.5 EGLD',
-      volume: '1,450 EGLD',
-      items: 1000,
-      holders: 680,
-      openRarityRank: '#1',
+      floorPrice: '1.8 EGLD',
+      volume: '1,850 EGLD',
+      items: '98 SFTs',
+      holders: '1,146',
+      explorerUrl: 'https://explorer.multiversx.com/collections/ONXCRDS-ab712e',
+      websiteUrl: 'https://oni0nx.com/onionxcards/',
+      openRarityRank: '#1 SFT',
       description: isIt 
-        ? 'La collezione capostipite dell’ecosistema OOX. Fornisce l’accesso prioritario a tutti i futuri mint, azzera le fee di trading sul marketplace e garantisce airdrop mensili in token $ONX.'
-        : 'The flagship collection of the OOX ecosystem. Grants priority access to all future mints, zero trading fees on the marketplace, and monthly $ONX token airdrops.',
+        ? 'La collezione ufficiale di SFT (Semi-Fungible Tokens) dell’ecosistema OOX su MultiversX. Carte collezionabili uniche disegnate a mano e divise in 10 Deck, con rarità Open Rarity e meccanica Burnable 🔥 per riscuotere ricompense.'
+        : 'The official SFT (Semi-Fungible Tokens) collection of the OOX ecosystem on MultiversX. Unique hand-drawn trading cards across 10 Decks featuring Open Rarity scores and Burnable 🔥 mechanics to claim rewards.',
       perks: [
-        isIt ? '100% Sconto sulle Fee OOX' : '100% Fee Discount on OOX',
-        isIt ? 'Airdrop mensile 500 $ONX' : 'Monthly 500 $ONX Airdrop',
-        isIt ? 'Staking Pool Multiplier 2.5x' : 'Staking Pool 2.5x Multiplier',
+        isIt ? 'Collezione SFT (Semi-Fungible Tokens)' : 'SFT Collection (Semi-Fungible Tokens)',
+        isIt ? '1,146 Holders & 98 Card Uniche in 10 Deck' : '1,146 Holders & 98 Unique Cards in 10 Decks',
+        isIt ? 'Meccanica Burnable 🔥 per riscuotere Reward' : 'Burnable 🔥 Mechanics to claim Rewards',
+        isIt ? 'Ranking Certificato Open Rarity su OOX' : 'Certified Open Rarity Ranking on OOX',
       ],
       gradient: 'from-purple-500 via-cyan-400 to-emerald-400',
       glow: '#a855f7',
@@ -267,18 +272,22 @@ export default function OoxOurCollectionsBanner() {
               </p>
 
               {/* METRICS ROW */}
-              <div className="grid grid-cols-3 gap-2 p-3 rounded-2xl bg-slate-900/60 border border-white/5 text-center">
+              <div className="grid grid-cols-4 gap-1.5 p-3 rounded-2xl bg-slate-900/60 border border-white/5 text-center">
                 <div>
-                  <div className="text-[10px] font-bold text-slate-400 uppercase">{isIt ? 'Floor Price' : 'Floor Price'}</div>
-                  <div className="text-xs sm:text-sm font-black text-cyan-400 mt-0.5">{col.floorPrice}</div>
+                  <div className="text-[10px] font-bold text-slate-400 uppercase">{isIt ? 'Floor' : 'Floor'}</div>
+                  <div className="text-xs font-black text-cyan-400 mt-0.5">{col.floorPrice}</div>
+                </div>
+                <div>
+                  <div className="text-[10px] font-bold text-slate-400 uppercase">{isIt ? 'Holders' : 'Holders'}</div>
+                  <div className="text-xs font-black text-emerald-400 mt-0.5">{col.holders}</div>
                 </div>
                 <div>
                   <div className="text-[10px] font-bold text-slate-400 uppercase">{isIt ? 'Volume' : 'Volume'}</div>
-                  <div className="text-xs sm:text-sm font-black text-purple-400 mt-0.5">{col.volume}</div>
+                  <div className="text-xs font-black text-purple-400 mt-0.5">{col.volume}</div>
                 </div>
                 <div>
-                  <div className="text-[10px] font-bold text-slate-400 uppercase">{isIt ? 'Supply' : 'Supply'}</div>
-                  <div className="text-xs sm:text-sm font-black text-slate-200 mt-0.5">{col.items}</div>
+                  <div className="text-[10px] font-bold text-slate-400 uppercase">{isIt ? 'Items' : 'Items'}</div>
+                  <div className="text-xs font-black text-slate-200 mt-0.5">{col.items}</div>
                 </div>
               </div>
 
@@ -299,16 +308,29 @@ export default function OoxOurCollectionsBanner() {
 
             </div>
 
-            {/* ACTION CTA */}
-            <a
-              href="https://oox.art"
-              target="_blank"
-              rel="noreferrer"
-              className="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 text-white font-extrabold text-xs flex items-center justify-center space-x-2 shadow-glow-cyan hover:opacity-95 transition-all active:scale-95 mt-4"
-            >
-              <span>{isIt ? 'Esplora Collezione su OOX.art' : 'Explore Collection on OOX.art'}</span>
-              <ArrowUpRight className="w-4 h-4" />
-            </a>
+            {/* ACTION CTAS */}
+            <div className="space-y-2 pt-2">
+              {col.explorerUrl && (
+                <a
+                  href={col.explorerUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-full py-2.5 px-4 rounded-xl glass-card hover:border-cyan-500/40 text-slate-300 hover:text-cyan-400 font-bold text-xs flex items-center justify-center space-x-2 transition-all active:scale-95"
+                >
+                  <ExternalLink className="w-3.5 h-3.5" />
+                  <span>{isIt ? 'Vedi su MultiversX Explorer' : 'View on MultiversX Explorer'}</span>
+                </a>
+              )}
+              <a
+                href="https://oox.art"
+                target="_blank"
+                rel="noreferrer"
+                className="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 text-white font-extrabold text-xs flex items-center justify-center space-x-2 shadow-glow-cyan hover:opacity-95 transition-all active:scale-95"
+              >
+                <span>{isIt ? 'Esplora Collezione su OOX.art' : 'Explore Collection on OOX.art'}</span>
+                <ArrowUpRight className="w-4 h-4" />
+              </a>
+            </div>
           </div>
         ))}
       </div>
