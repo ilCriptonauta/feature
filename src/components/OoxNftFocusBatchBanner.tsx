@@ -38,7 +38,7 @@ export default function OoxNftFocusBatchBanner() {
   };
 
   return (
-    <section className="relative rounded-3xl p-6 sm:p-10 glass-card border border-cyan-500/30 overflow-hidden space-y-8">
+    <section className="relative rounded-3xl p-4 sm:p-8 glass-card border border-cyan-500/30 overflow-hidden space-y-8">
       {/* Background Glows */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-cyan-500/15 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-600/15 rounded-full blur-3xl pointer-events-none" />
@@ -50,11 +50,11 @@ export default function OoxNftFocusBatchBanner() {
           <span>{isIt ? 'Esperienza NFT-First • Rete MultiversX' : 'NFT-First Experience • MultiversX Network'}</span>
         </div>
 
-        <h2 className="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight leading-tight">
+        <h2 className="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight leading-tight break-words">
           {isIt ? (
-            <>I tuoi NFT in primo piano. <span className="gradient-text-cyan-purple">Sempre in primo piano.</span></>
+            <>I tuoi NFT in primo piano. <span className="gradient-text-cyan-purple">Sempre.</span></>
           ) : (
-            <>Your NFTs Front and Center. <span className="gradient-text-cyan-purple">Always Front and Center.</span></>
+            <>Your NFTs Front and Center. <span className="gradient-text-cyan-purple">Always.</span></>
           )}
         </h2>
 
